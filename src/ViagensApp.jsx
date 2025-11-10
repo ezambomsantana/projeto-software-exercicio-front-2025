@@ -308,8 +308,8 @@ export default function ViagensApp() {
                 <tbody>
                   {viagens.map((viagem) => (
                     <tr key={viagem.id}>
-                      <td>{viagem.origemNome ?? "-"}</td>
-                      <td>{viagem.destinoNome ?? "-"}</td>
+                      <td>{viagem.nomeOrigem ?? "-"}</td>
+                      <td>{viagem.nomeDestino ?? "-"}</td>
                       <td>{viagem.modoTransporte ?? "-"}</td>
                       <td className="descricao-cell">
                         {viagem.descricao?.trim() || "—"}
